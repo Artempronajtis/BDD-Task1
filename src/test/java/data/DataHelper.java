@@ -33,13 +33,9 @@ public class DataHelper {
     }
 
     public static int generateInvalidAmount(int balance) {
-        return Math.abs(balance) + new Random().nextInt(5000);
+        return Math.abs(balance) + new Random().nextInt(10_000);
     }
 
-    // @Value
-    // public static class VerificationCode {
-    // String code;
-    // }
 
     @Value
     public static class CardInfo {
